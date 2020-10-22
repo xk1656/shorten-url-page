@@ -1,0 +1,80 @@
+.main {
+  background-color: #eff1f7;
+  @media screen and (max-width: 900px) {
+    margin-top: 10rem;
+  }
+
+  .info-boxes {
+    margin: -4rem 0 3rem 0;
+  }
+
+  .main_container {
+    padding: 0 8rem;
+    @media screen and (max-width: 900px) {
+      padding: 0 2rem;
+    }
+
+    .main_text {
+      margin-bottom: 7rem;
+      @media screen and (max-width: 900px) {
+        margin-bottom: 12rem;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+        @media screen and (max-width: 900px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .main_boxes {
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(
+        180deg,
+        transparent,
+        transparent calc(50% - 5px),
+        #2bd0d0 calc(50% - 5px),
+        #2bd0d0 calc(50% + 5px),
+        transparent calc(50% + 5px)
+      );
+      margin-bottom: 10rem;
+      @media screen and (max-width: 900px) {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          transparent calc(50% - 5px),
+          #2bd0d0 calc(50% - 5px),
+          #2bd0d0 calc(50% + 5px),
+          transparent calc(50% + 5px)
+        );
+        flex-direction: column;
+      }
+      .box:first-of-type {
+        transform: translateY(-2.2rem);
+        @media screen and (max-width: 900px) {
+          transform: translateY(-5.2rem);
+        }
+      }
+      .box:last-of-type {
+        transform: translateY(2.2rem);
+        @media screen and (max-width: 900px) {
+          transform: translateY(5.2rem);
+        }
+      }
+    }
+  }
+
+  .main_link {
+    background: url("/images/bg-boost-desktop.svg"), #3b3054;
+    padding: 3rem;
+    h2 {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

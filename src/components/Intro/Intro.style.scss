@@ -1,0 +1,45 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 7rem;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 900px) {
+      width: unset;
+      display: unset;
+      order: 2;
+    }
+    h2 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 900px) {
+        font-size: 2.2rem;
+      }
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .intro_right {
+    width: 45%;
+    @media screen and (max-width: 900px) {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
+    img {
+      width: calc(100% + 14rem);
+    }
+  }
+}
